@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  serverNode:
+    container_name: serverNode
+    restart: always
+    image: jodyannre/serverNode_p2_201115018
+    ports:
+      - "5000:5000"
+  frontend:
+    container_name: frontend
+    restart: always
+    #build: ./crudGo
+    image: jodyannre/frontend_p2_201115018
+    ports:
+      - "3000:3000"
+    depends_on:
+      - serverNode
+    links:
+      - serverNode

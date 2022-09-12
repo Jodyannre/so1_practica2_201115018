@@ -1,0 +1,1 @@
+cmd_/home/joddie/Escritorio/so1_practita2/modules/cpu/Module.symvers := sed 's/\.ko$$/\.o/' /home/joddie/Escritorio/so1_practita2/modules/cpu/modules.order | scripts/mod/modpost -m -a  -o /home/joddie/Escritorio/so1_practita2/modules/cpu/Module.symvers -e -i Module.symvers   -T -

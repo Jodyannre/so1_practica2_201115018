@@ -1,0 +1,1 @@
+cmd_/home/joddie/Escritorio/so1_practita2/modules/cpu/cpu_201115018.ko := ld -r -m elf_x86_64 --build-id=sha1  -T scripts/module.lds -o /home/joddie/Escritorio/so1_practita2/modules/cpu/cpu_201115018.ko /home/joddie/Escritorio/so1_practita2/modules/cpu/cpu_201115018.o /home/joddie/Escritorio/so1_practita2/modules/cpu/cpu_201115018.mod.o;  true
