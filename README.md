@@ -31,7 +31,7 @@ __*Todos los servidores fueron levandas en vms de GCP utilizan docker para su de
 **Servidor NodeJS**
 - src/index.js => Servidor levantado con la librería **express** y que entrega datos en 2 rutas /getDataRAM y /getDataCPU, ambas rutas utilizan el método get par su funcionamiento y entregan los resultados obtenidos desde la base de datos y son enviados en formato json hacia los consultantes.
 
-**Frontend **
+**Frontend**
 - src/components/ChartRam.js => Componente utilizado para crear una gráfica con la librería **ChartJS** que muestra los datos recuperados desde le servidor NodeJS y referentes al uso de la ram. La gráfica es de tipo pastel y muestra la ram utilizada y las ram libre.
 - src/components/ChildrenTable.js => Componente utilizado para la generación de modals que guardan tablas con los datos recuperados por la ruta /getDataCPU y que estan relacionados estrictamente con los procesos hijos de los procesos en general mostrados en la aplicación.
 - src/components/TableCpu.js => Componente utilizado para la generación de una tabla que muestra toda la información recuperada desde la ruta /getDataCPU y que esta relacionada estrictamente con los procesos y sus principales datos como el uid, el nombre y el uso de la memoria. Para los procesos hijos se utiliza el componente ChildrenTable para su visualización.
