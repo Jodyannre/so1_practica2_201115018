@@ -4,7 +4,7 @@ services:
   serverNode:
     container_name: serverNode
     restart: always
-    image: jodyannre/serverNode_p2_201115018
+    image: jodyannre/servernode_p2_201115018
     ports:
       - "5000:5000"
   frontend:
